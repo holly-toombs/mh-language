@@ -1,0 +1,26 @@
+# API credentials
+.env
+
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Research data
+data/
+*.db
+*.db-wal
+*.db-shm
+*.csv
+*.xlsx
+
+# Old practice files
+archive/
+
+# Local VS Code settings
+.vscode/
+
+# Scripts not ready for sharing
+scripts/videosRT.py
+scripts/creatorsRT.py
+scripts/exportData.py
