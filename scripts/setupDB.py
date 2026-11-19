@@ -13,10 +13,10 @@ cursor.execute("""
         videoID TEXT PRIMARY KEY,
         videoURL TEXT,
         sampleID TEXT,
-        searchQuery TEXT,
-        influencerType TEXT,
-        estMonth TEXT
+        datePosted TEXT
     )""")
+
+# cursor.execute("DROP TABLE IF EXISTS videosMD")
 
 # creates the videosMD table
 cursor.execute("""
@@ -33,7 +33,12 @@ cursor.execute("""
         favesCount INTEGER,
         hashtags TEXT,
         duration INTEGER,
-        retrievedAT TEXT
+        retrievedAT TEXT,
+        transcript TEXT,
+        videoTag TEXT,
+        videoLabel TEXT,
+        hashtagInfo TEXT,
+        isStemVerified INTEGER
     )
 """)
 
@@ -64,7 +69,10 @@ cursor.execute("""
         apiErrorCode TEXT,
         logID TEXT,
         resultCount INTEGER,
-        outcome TEXT
+        outcome TEXT,
+        cursor INTEGER,
+        searchID TEXT,
+        hasMore INTEGER
     )
 """)
 

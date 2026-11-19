@@ -14,11 +14,9 @@ insert_query = """
         videoID,
         videoURL,
         sampleID,
-        searchQuery,
-        influencerType,
-        estMonth
+        datePosted
     )
-    VALUES (?, ?, ?, ?, ?, ?)
+    VALUES (?, ?, ?, ?)
 """
 
 # converts each row to a tuple and executes INSERT for every row
